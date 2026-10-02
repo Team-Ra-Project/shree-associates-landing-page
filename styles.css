@@ -1512,3 +1512,44 @@ button, input, select, textarea { font-family: inherit; font-size: inherit; }
   }
   .logo-img { height: 38px; }
 }
+
+/* New content helpers */
+.cost-grid { grid-template-columns: repeat(4, 1fr) !important; }
+.cost-label { font-weight: 700; margin-bottom: 8px; color: var(--primary); font-size: 1.05rem; }
+.benefits-grid { grid-template-columns: repeat(3, 1fr) !important; }
+.service-card-full { grid-column: 1 / -1; max-width: 560px; margin: 0 auto; }
+.approach-label {
+  text-align: center;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 28px;
+  color: var(--text);
+}
+.exp-years {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--primary);
+  margin: 12px 0;
+}
+.exp-since { font-weight: 650; margin-bottom: 16px; }
+.exp-clients { font-weight: 650; margin: 12px 0; }
+.exp-tagline {
+  font-weight: 750;
+  margin-top: 12px;
+  color: var(--primary);
+}
+.final-clarity {
+  font-size: 1.2rem !important;
+  font-weight: 700 !important;
+  color: var(--text) !important;
+}
+.hero-line1, .hero-line2 { display: inline; }
+
+@media (max-width: 1024px) {
+  .cost-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .benefits-grid { grid-template-columns: repeat(2, 1fr) !important; }
+}
+@media (max-width: 768px) {
+  .cost-grid { grid-template-columns: 1fr !important; }
+  .benefits-grid { grid-template-columns: 1fr !important; }
+}
